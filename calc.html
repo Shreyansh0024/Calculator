@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <div class="display">
+        <div class="calculator">
+            <div class="input-div"><input type="text" id="input" placeholder="0" readonly></div>
+            <div class="grid-container">
+                <div class="grid-item" onclick="getOperator('%')" id="mod">%</div>
+                <div class="grid-item" onclick="clearEntry()" id="clear_entry">CE</div>
+                <div class="grid-item" onclick="clearScreen()" id="clear">C</div>
+                <div class="grid-item" onclick="removeDigit()" id="remove"><i class="material-icons">backspace</i></div>
+                <div class="grid-item" onclick="getNumbers(7)" id="seven">7</div>
+                <div class="grid-item" onclick="getNumbers(8)" id="eight">8</div>
+                <div class="grid-item" onclick="getNumbers(9)" id="nine">9</div>
+                <div class="grid-item" onclick="getOperator('*')" id="mul">x</div>
+                <div class="grid-item" onclick="getNumbers(4)" id="four">4</div>
+                <div class="grid-item" onclick="getNumbers(5)" id="five">5</div>
+                <div class="grid-item" onclick="getNumbers(6)" id="six">6</div>
+                <div class="grid-item" onclick="getOperator('-')" id="sub">-</div>
+                <div class="grid-item" onclick="getNumbers(1)" id="one">1</div>
+                <div class="grid-item" onclick="getNumbers(2)" id="two">2</div>
+                <div class="grid-item" onclick="getNumbers(3)" id="three">3</div>
+                <div class="grid-item" onclick="getOperator('+')" id="add">+</div>
+                <div class="grid-item" onclick="getNumbers(0)" id="zero">0</div>
+                <div class="grid-item" onclick="getNumbers('.')" id="decimal">.</div>
+                <div class="grid-item" onclick="getOperator('/')" id="div">/</div>
+                <div class="grid-item" onclick="doCalculation()" id="euqal">=</div>
+            </div>
+        </div>
+        <div class="history">
+            <div>History:
+                <div id="history"></div>
+            </div>
+            <div>
+                <button onclick="clearHistory()">Clear History</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>

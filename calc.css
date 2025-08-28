@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.grid-item {
+  background-color: #2b2f32;  
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.grid-item:hover{
+    background-color: #585d60;
+}
+
+.input-div {
+    padding-top: 10px;
+    text-align: center;    
+}
+
+.input-div input {
+    width: 90%;
+    height: 50px;
+    background-color: #1e2026;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.calculator {
+    display: grid;
+    background-color: #1e2026;
+    border-radius: 10px;
+    grid-template-rows: auto auto;
+    width: 350px;
+    height: auto;   
+}
+
+.display {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.history {
+    width: 250px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
